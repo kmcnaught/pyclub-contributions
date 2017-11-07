@@ -1,13 +1,13 @@
 
-+++
+
 
 # Testing scientific code
 
 - What are tests?
 - Why are tests important?
-- How to test your code
+- How to test your code (high level)
 
-+++
+
 
 # What are tests?
 
@@ -16,14 +16,21 @@
 - This is a test!
 
 ![exp_growth_test](exp_growth_test.png)
-+++
+
+- Is my code doing the right thing?
+- Does it work for all possible inputs?
+- How does it handle incorrect input?
 
 # Why are tests important?
 
-- Code is wrong → wrong results → bad things happen
+- Writing code:
+    - Code is wrong → wrong results → bad things happen
     - Need to be confident of results
+        - Avoid wrong papers
+        - Avoid wrong experiments
     - Bugs are a fact of life
-- How do you change code?
+- Changing code:
+    - How do you know that it *still* works?
     - Either _"Edit and Pray"_ or _"Cover and Modify"_
 - Proper tests will:
     - Catch common bugs
@@ -32,7 +39,7 @@
     - Reduce time to solution
     - Allow you to make changes confidently
     - Provide documentation - how to use code
-+++
+
 
 <!-- # What to test
 
@@ -59,7 +66,7 @@
     - Most likely do something like this already
     - “Known good” answer (“regression test”)
 
-+++
+
 
 # How to test
 
@@ -73,11 +80,11 @@
 - Should run as often as possible
     - Continuous integration tools (Travis CI, Jenkins)
 - Example project setup
-+++
+
 
 ## What does a test look like?
 
-- Different testing frameworks exist, but ultimately a test is a function that returns a boolean. (maybe exit code, assertion, ...)
+- Different testing frameworks have their own conventions, but ultimately a test is a function that returns a boolean. (maybe exit code, assertion, ...)
 
 ![exp_growth_test](exp_growth_test.png)
 
@@ -97,8 +104,6 @@ else:
     exit(1)
 ```
 
-[/columns]
-+++
 
 ## What does a test look like?
 - Regression version: no 'true' answer available...
@@ -119,7 +124,7 @@ else:
     exit(1)
 ```
 
-+++
+
 
 # How to test
 
@@ -130,7 +135,7 @@ else:
     - Write unit tests for new code
     - Write unit tests before refactoring existing code
     - Write a test when you fix a bug - so you won't be bitten twice
-+++
+
 
 ## How do I get started testing new code?
 
@@ -144,7 +149,7 @@ else:
 - Pragmatic TDD 
     - As you write/hand-test your code, create real tests
     - As you plan your implementation todo list, think about what can be tested
-+++
+
 
 
 # Resources:
@@ -153,7 +158,7 @@ else:
 - _Software Engineering for Science_ - JC Carver, NP Chue Hong, GK Thiruvathukal (ISBN: 9781498743853)
 - _Dealing with Risk in Scientific Software Development_ - R Sanders, D Kelly (IEEE Software, 25(4), July 2008)
 
-+++
+
 
 # Summary
 
@@ -165,7 +170,8 @@ else:
 - Should be automated as much as possible
 - Should run as often as possible
 
-+++
+
+## TL;DR
 
 - Write tests
 - Automate them
