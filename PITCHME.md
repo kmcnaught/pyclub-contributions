@@ -1,12 +1,13 @@
 
----
++++
 
 # Testing scientific code
 
 - What are tests?
 - Why are tests important?
 - How to test your code
----
+
++++
 
 # What are tests?
 
@@ -15,7 +16,7 @@
 - This is a test!
 
 ![exp_growth_test](exp_growth_test.png)
----
++++
 
 # Why are tests important?
 
@@ -31,7 +32,7 @@
     - Reduce time to solution
     - Allow you to make changes confidently
     - Provide documentation - how to use code
----
++++
 
 <!-- # What to test
 
@@ -58,7 +59,7 @@
     - Most likely do something like this already
     - “Known good” answer (“regression test”)
 
----
++++
 
 # How to test
 
@@ -72,7 +73,7 @@
 - Should run as often as possible
     - Continuous integration tools (Travis CI, Jenkins)
 - Example project setup
----
++++
 
 ## What does a test look like?
 
@@ -97,7 +98,7 @@ else:
 ```
 
 [/columns]
----
++++
 
 ## What does a test look like?
 - Regression version: no 'true' answer available...
@@ -118,7 +119,7 @@ else:
     exit(1)
 ```
 
----
++++
 
 # How to test
 
@@ -129,7 +130,7 @@ else:
     - Write unit tests for new code
     - Write unit tests before refactoring existing code
     - Write a test when you fix a bug - so you won't be bitten twice
----
++++
 
 ## How do I get started testing new code?
 
@@ -143,7 +144,7 @@ else:
 - Pragmatic TDD 
     - As you write/hand-test your code, create real tests
     - As you plan your implementation todo list, think about what can be tested
----
++++
 
 
 # Resources:
@@ -152,7 +153,7 @@ else:
 - _Software Engineering for Science_ - JC Carver, NP Chue Hong, GK Thiruvathukal (ISBN: 9781498743853)
 - _Dealing with Risk in Scientific Software Development_ - R Sanders, D Kelly (IEEE Software, 25(4), July 2008)
 
----
++++
 
 # Summary
 
@@ -164,7 +165,7 @@ else:
 - Should be automated as much as possible
 - Should run as often as possible
 
----
++++
 
 - Write tests
 - Automate them
