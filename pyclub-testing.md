@@ -1,17 +1,3 @@
-<!-- 
----
-
-Along with version control, tests are essential to good practice for
-developing software. Having tests makes it easier to reason about
-changes, and ensure trust in the outputs of your code. And if you
-can't trust your code, you can't trust the papers written using the
-results...
-
-(this is based on Peter Hill's talk at https://physicscodingclub.github.io/)
-(also some from Charly's colleague's talk)
-
-what to test? write spec
-assertions -->
 
 ---
 
