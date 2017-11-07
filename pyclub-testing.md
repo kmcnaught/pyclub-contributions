@@ -1,4 +1,5 @@
-
+<!-- 
+---
 
 Along with version control, tests are essential to good practice for
 developing software. Having tests makes it easier to reason about
@@ -10,7 +11,8 @@ results...
 (also some from Charly's colleague's talk)
 
 what to test? write spec
-assertions
+assertions -->
+
 ---
 
 # Testing scientific code
