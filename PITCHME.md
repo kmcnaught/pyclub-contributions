@@ -1,22 +1,12 @@
 
-
-Along with version control, tests are essential to good practice for
-developing software. Having tests makes it easier to reason about
-changes, and ensure trust in the outputs of your code. And if you
-can't trust your code, you can't trust the papers written using the
-results...
-
-(this is based on Peter Hill's talk at https://physicscodingclub.github.io/)
-(also some from Charly's colleague's talk)
-
-what to test? write spec
-assertions
+---
 
 # Testing scientific code
 
 - What are tests?
 - Why are tests important?
 - How to test your code
+---
 
 # What are tests?
 
@@ -25,6 +15,7 @@ assertions
 - This is a test!
 
 ![exp_growth_test](exp_growth_test.png)
+---
 
 # Why are tests important?
 
@@ -40,6 +31,7 @@ assertions
     - Reduce time to solution
     - Allow you to make changes confidently
     - Provide documentation - how to use code
+---
 
 <!-- # What to test
 
@@ -66,6 +58,7 @@ assertions
     - Most likely do something like this already
     - “Known good” answer (“regression test”)
 
+---
 
 # How to test
 
@@ -79,6 +72,7 @@ assertions
 - Should run as often as possible
     - Continuous integration tools (Travis CI, Jenkins)
 - Example project setup
+---
 
 ## What does a test look like?
 
@@ -103,6 +97,7 @@ else:
 ```
 
 [/columns]
+---
 
 ## What does a test look like?
 - Regression version: no 'true' answer available...
@@ -123,6 +118,7 @@ else:
     exit(1)
 ```
 
+---
 
 # How to test
 
@@ -133,6 +129,7 @@ else:
     - Write unit tests for new code
     - Write unit tests before refactoring existing code
     - Write a test when you fix a bug - so you won't be bitten twice
+---
 
 ## How do I get started testing new code?
 
@@ -146,21 +143,16 @@ else:
 - Pragmatic TDD 
     - As you write/hand-test your code, create real tests
     - As you plan your implementation todo list, think about what can be tested
+---
 
-# How to test
-
-## Solutions
-- _Working Effectively with Legacy Code_ - Michael C. Feathers
-- Test driven development for new codes
-- Integrated tests good start
-- Lots of frameworks available for every language (cppunit, funit, pytest)
-- Continuous integration tools (Travis CI, Jenkins)
 
 # Resources:
 
 - _Working Effectively with Legacy Code_ - MC Feathers (ISBN: 9780131177055)
 - _Software Engineering for Science_ - JC Carver, NP Chue Hong, GK Thiruvathukal (ISBN: 9781498743853)
 - _Dealing with Risk in Scientific Software Development_ - R Sanders, D Kelly (IEEE Software, 25(4), July 2008)
+
+---
 
 # Summary
 
@@ -172,7 +164,7 @@ else:
 - Should be automated as much as possible
 - Should run as often as possible
 
-## 
+---
 
 - Write tests
 - Automate them
